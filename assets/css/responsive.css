@@ -1324,6 +1324,9 @@
     .logo a img {
         max-width: 150px;
     }
+    .footer_single.footer_single_last a:first-child, .headline-f {
+        margin-bottom: 5px;
+    }
     .career_banner_img {
         border-radius: 0 0 0 67px; 
     }
@@ -1806,11 +1809,7 @@
         padding: 60px 0 80px;
         gap: 40px;
     }
-
-    .footer_single.footer_single_last a:first-child,
-    .headline-f {
-        margin-bottom: 40px;
-    }
+ 
 
     .footer_single .headline-f {
         margin-bottom: 40px;
