@@ -1518,12 +1518,14 @@
     }
 }
 
-
 @media all and (max-width:575px) {
     .text_30 {
         font-size: 18px;
         line-height: 24px;
         letter-spacing: 0.6px;
+    }
+    .footer_single.footer_single_last ul a {
+        margin: 0 !important;
     }
 
     .clients_think_main_area {
