@@ -373,6 +373,9 @@ img {
 	background: #20194B;
 	border-bottom: 1px solid #42F4B1;
 }
+.contatct_footer_sk {
+	margin-top: 33px;
+}
 
 .dorp_down {
 	width: 225px;
@@ -1261,7 +1264,7 @@ input[type=number] {
 }
 
 .footer_content_area {
-	padding: 69px 0 96px;
+	padding: 69px 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
