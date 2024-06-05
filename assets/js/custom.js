@@ -7,6 +7,47 @@ $(document).ready(function () {
         dots: true,
         navText: ["<img src='assets/images/left_arrow.png'>", "<img src='assets/images/right_arrow.png'>"]
     });
+
+   
+
+
+      $('.popup_magnific').magnificPopup({
+        type: 'iframe',
+        iframe: {
+            patterns: {
+                youtube: {
+                    index: 'youtube.com/', 
+                    id: function(url) {
+                        var m = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
+                        if ( !m || !m[1] ) return null;
+                        return m[1];
+                    },
+                    src: '//www.youtube.com/embed/%id%?autoplay=1'
+                }
+            },
+            srcAction: 'iframe_src',
+        }
+
+    });
+    
+    $('.download_pdf').on('click', function() {
+        var link = $(this).data('href'); // Get the data-href attribute value
+
+        // Download the PDF
+        var a = document.createElement('a');
+        a.href = link;
+        a.download = link.split('/').pop(); // Set the filename to be the same as the file's name
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+
+        // Open PDF in a new tab
+        setTimeout(function() {
+            window.open(link, '_blank');
+        }, 500); // Add a delay to ensure the download is triggered first
+    });
+      
+
 });
 
 
@@ -80,6 +121,24 @@ menuItem2.addEventListener("mouseleave", () => {
     megaMenu2.style.display = "none";
     $('.drop_down_menu').hide();
     $('.drop_menu').removeClass('active');
+});
+
+// drop down menu hover script 
+const menuItem3 = document.querySelector(".drop_menu_at2");
+const megaMenu3 = document.querySelector(".drop_down_menu2");
+
+menuItem3.addEventListener("mouseenter", () => {
+    megaMenu3.style.display = "block";
+    $('.mega_menu_mail').hide();
+    $('.solutions_menu').removeClass('active');
+    $('.drop_menu').removeClass('active');
+    $('.drop_menu2').addClass('active');
+});
+
+menuItem3.addEventListener("mouseleave", () => {
+    megaMenu3.style.display = "none";
+    $('.drop_down_menu').hide();
+    $('.drop_menu2').removeClass('active');
 });
 
 

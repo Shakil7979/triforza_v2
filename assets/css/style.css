@@ -353,12 +353,19 @@ img {
 	flex-direction: column;
 }
 
+.drop_down_menu2,
 .drop_down_menu {
 	position: absolute;
 	top: 79px;
 	z-index: 99;
 	display: none;
 	padding-top: 77px;
+}
+
+.drop_down_menu2 .dorp_down { 
+	padding: 37px 24px;
+	background: #20194B;
+	border-bottom: 1px solid #42F4B1;
 }
 
 .dorp_down {
@@ -2919,6 +2926,174 @@ input[type=number] {
 
 .what-we-do .inactive {
 	transform: scale(0.6);
+}
+
+.career .banner_tittle {
+	margin-bottom: 46px;
+	color: #42F4B1;
+}
+
+.banner_inner_main_area.career {
+	text-align: center;
+	width: 100%; 
+}
+
+.career_banner_img {
+	border-radius: 0 0 0 180px;
+	overflow: hidden;
+	width: 100%;
+	max-width: 1402px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+
+.green_color {
+	color: #42F4B1;
+}
+
+
+.career_btn span {
+	color: #000;
+	text-align: center;
+	font-family: Poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 15px;
+	text-transform: uppercase;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	bottom: 0;
+}
+
+.career_btn{
+	margin-bottom: 100px;
+	margin-top: 46px;
+}
+
+.career_btn a {
+	width: 100%;
+	max-width: 560px;
+	margin: 0 auto;
+	display: inline-block;
+	position: relative;
+	transition: 0.3s;
+}
+
+.career_btn a:hover img {
+	opacity: 0.83;
+}
+
+.career_btn {
+	text-align: center;
+}
+
+.career_btn a img {
+	width: 100%;
+}
+
+.banner_inner_main_area.career  .banner_contents {
+	max-width: 100%;
+	max-width: 1202px;
+  	margin: 0 auto;
+	margin-bottom: 25px;
+}
+
+
+.banner_inner_main_area.career .banner_contents_career { 
+	max-width: 1448px; 
+}
+
+.career_platform .single_pera.digital_single_pera {
+	line-height: 35px;
+}
+.career_platform .single_pera.digital_single_pera ,
+.career_platform .single_item_tittle {
+	text-align: left;
+}
+
+.career_platform  .digital_single_item {
+	max-width: 475px;
+}
+
+.javalin_btn {
+	margin: 40px 0 0 0;
+}
+
+.javalin_btn a {
+	width: 100%;
+	max-width: 232px;
+	display: inline-block;
+	position: relative;
+	transition: 0.3s;
+}
+
+.javalin_btn a:hover img ,
+.javalin_btn a:hover span {
+	opacity: 0.83;
+}
+
+.javalin_btn a img {
+	width: 100%;
+}
+
+.javalin_btn span {
+	color: #42F4B1;
+	text-align: center;
+	font-family: Poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 15px;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	gap: 13px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	bottom: 0;
+}
+
+.sk_download_box {
+	padding: 100px 0 75px 0;
+	text-align: center; 
+	border-top: 1px solid rgba(41, 222, 253, 0.50);
+}
+
+.sk_download_btn {
+	background: #fff;
+}
+
+.download_pdf {
+	color: #000;
+	text-align: center;
+	font-family: Poppins;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 50px;
+	letter-spacing: 0.48px;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(41, 222, 253, 0.50);
+	padding: 0 5px;
+	/* height: 50px; */
+	transition: 0.3s;
+}
+
+.download_pdf:hover {
+	opacity: 0.83;
+	color: rgb(7, 67, 73);
 }
 
 
