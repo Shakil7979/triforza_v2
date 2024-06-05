@@ -362,6 +362,12 @@ img {
 	padding-top: 77px;
 }
 
+.drop_down_menu .dorp_down { 
+	padding: 37px 24px;
+	background: #20194B;
+	border-bottom: 1px solid #42F4B1;
+}
+
 .drop_down_menu2 .dorp_down { 
 	padding: 37px 24px;
 	background: #20194B;
