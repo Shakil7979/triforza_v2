@@ -29,25 +29,31 @@ $(document).ready(function () {
         }
 
     });
-    
-    $('.download_pdf').on('click', function() {
-        var link = $(this).data('href'); // Get the data-href attribute value
-
-        // Download the PDF
-        var a = document.createElement('a');
-        a.href = link;
-        a.download = link.split('/').pop(); // Set the filename to be the same as the file's name
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-
-        // Open PDF in a new tab
-        setTimeout(function() {
-            window.open(link, '_blank');
-        }, 500); // Add a delay to ensure the download is triggered first
-    });
+     
       
 
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var buttons = document.querySelectorAll('.download_pdf');
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            var link = this.getAttribute('data-href'); // Get the data-href attribute value
+
+            // Download the PDF
+            var a = document.createElement('a');
+            a.href = link;
+            a.download = link.split('/').pop(); // Set the filename to be the same as the file's name
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+
+            // Open PDF in a new tab
+            setTimeout(function() {
+                window.open(link, '_blank');
+            }, 500); // Add a delay to ensure the download is triggered first
+        });
+    });
 });
 
 
